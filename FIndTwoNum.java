@@ -5,7 +5,8 @@ public class FIndTwoNum {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
-		int target=9;
+		System.out.println("Enter the target");
+		int target=s.nextInt();
 		int[] a=new int[n];
 		int i,j;
 		for(i=0;i<n;i++)
