@@ -13,10 +13,6 @@ public class StringDuplicates {
 		char[] ch=str.toCharArray();
 		char[] ch1=new char[length];
 		Arrays.sort(ch);
-		for(i=0;i<length;i++)
-		{
-			System.out.print(ch[i]);
-		}
 		System.out.println("\n");
 		for(i=0;i<length-1;i++)
 		{
