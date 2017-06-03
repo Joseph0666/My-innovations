@@ -22,7 +22,7 @@ public class Coprime {
 		}
 		if(count==1&&count1==1)
 		{
-			System.out.println("Coprime num");
+			System.out.println("Co-prime");
 		}
 		else
 		{
