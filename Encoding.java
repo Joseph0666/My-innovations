@@ -5,8 +5,8 @@ public class Encoding {
 		Scanner s=new Scanner(System.in);
 		String input1=s.nextLine();
 		String input2=s.nextLine();
-		System.out.println(input1);
-		System.out.println(input2);
+		//System.out.println(input1);
+		//System.out.println(input2);
 		int len=input1.length();
 		int len1=input2.length();
 		int i;
@@ -141,6 +141,7 @@ public class Encoding {
 			}
 			}
 		}
+		System.out.print(" ");
 		String str=" ";
 		for(i=0;i<len1;i++)
 		{
