@@ -1,31 +1,32 @@
-package pro;
 import java.util.Scanner;
-public class Matching {
+public class Target {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
-		System.out.println("Enter n");
-		int n=s.nextInt();
+		int n,m;
+		n=s.nextInt();
 		int[] a=new int[n];
-		int m=0;
-		System.out.println("Enter target integer");
-		int t=s.nextInt();
+		System.out.println("Enter m");
+		m=s.nextInt();
+		System.out.println("Enter the TargetNumber");
+		int t=s.nextInt(),count=0;
 		int i;
 		for(i=0;i<n;i++)
 		{
 			a[i]=s.nextInt();
 		}
-		for(i=0;i<n;i++)
+	
+		for(i=0;i<m;i++)
 		{
-			m=m+a[i];
+			count=count+a[i];
 		}
-		if(m==t)
+		if(t==count)
 		{
-			System.out.println("True");
+			System.out.println("true");
 		}
 		else
 		{
-			System.out.println("False");
+			System.out.println("false");
 		}
 	}
 
