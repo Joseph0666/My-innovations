@@ -1,26 +1,25 @@
-package guvi;
 import java.util.Scanner;
 public class Repeated {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
-		int []a=new int[10];
-		int i,n,j;
-		n=s.nextInt();
-		for(i=0;i<n;i++)
+		String str=s.nextLine();
+		int i,j;
+		int count=0;
+		for(i=0;i<str.length();i++)
 		{
-			a[i]=s.nextInt();
-		}
-		for(i=0;i<n;i++)
-		{
-			for(j=i+1;j<n;j++)
+			count=0;
+			for(j=0;j<str.length();j++)
 			{
-				if(a[i]==a[j])
+				if(str.charAt(i)==(str.charAt(j)))
 				{
-					System.out.println(a[i]);
+					count++;
 				}
 			}
+			if(count==1)
+			{
+				System.out.println(str.charAt(i));
 		}
 	}
-
+	}
 }
