@@ -8,8 +8,6 @@ public class Guvi15 {
 		int[] a=new int[n];
 		int i;
 		int j;
-		
-		int[]d=new int[n];
 		for(i=0;i<n;i++){
 			a[i]=s.nextInt();
 		}
@@ -21,9 +19,6 @@ public class Guvi15 {
 			b[i]=n1;
 		}
 		int[] c=new int[n];
-		for(i=0;i<n;i++){
-			d[i]=b[i];
-		}
 		for(i=0;i<n;i++){
 			int count=0;
 			while(b[i]>0){
@@ -46,9 +41,6 @@ public class Guvi15 {
 						temp=a[i];
 						a[i]=a[j];
 						a[j]=temp;
-						temp=d[i];
-						d[i]=d[j];
-						d[j]=temp;
 					}
 					else if(c[i]==c[j]){
 						if(a[i]<a[j]){
@@ -58,9 +50,6 @@ public class Guvi15 {
 							temp=a[i];
 							a[i]=a[j];
 							a[j]=temp;
-							temp=d[i];
-							d[i]=d[j];
-							d[j]=temp;
 						}
 					}
 				}
