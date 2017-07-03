@@ -7,6 +7,7 @@ public class Power105 {
 		int i;
 		int j;
 		int reverse=0;
+		int n=input;
 		int len=String.valueOf(input).length();
 		for(i=0;i<len;i++){
 			int rem=input%10;
@@ -21,6 +22,7 @@ public class Power105 {
 		}
 		int sum1=1;
 		int sum2=1;
+		if(n>9){
 		for(i=0;i<len-1;i++){
 			sum1=1;
 			int num=a[i+1];
@@ -29,12 +31,16 @@ public class Power105 {
 			}
 			sum=sum+sum1;
 		}
+		
 		int num1=a[len-1];
 		int a1=a[0];
 		for(i=0;i<a1;i++){
 			sum2=sum2*num1;
 		}
-		s1=sum2;
+		s1=sum2;}
+		else {
+			System.out.println("Invalid data");
+		}
 		//System.out.println(s1);
 	}
 	public static void main(String[] args) {
