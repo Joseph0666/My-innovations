@@ -9,10 +9,7 @@ public class Guvi18 {
 		int n=s.nextInt();
 		int i;
 		int count=0;
-		int j;
 		int[] values=new int[n];
-		int[] count1=new int[n];
-		int k=0;;
 		System.out.println("Enter coins");
 		for(i=0;i<n;i++){
 			values[i]=s.nextInt();
