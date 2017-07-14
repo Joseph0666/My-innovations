@@ -10,7 +10,7 @@ public class ReverseWords {
 		for(i=str.length()-1;i>=0;i--){
 			s1=s1+ch[i];
 		}
-		System.out.println(s1);
+		//System.out.println(s1);
 		String s4="";
 		String[] s3=s1.split(" ");
 		for(String w:s3){
