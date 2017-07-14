@@ -9,7 +9,7 @@ public class Power {
 		System.out.println("Enter power");
 		int power=4;
 		int length=String.valueOf(n).length();
-		int rem,sum=0;
+		int rem,sum=1;
 		int[] a=new int[length];
 		int i,j;
 		for(i=0;i<length;i++){
@@ -17,10 +17,15 @@ public class Power {
 			a[i]=rem;
 			n/=10;
 		}
+		int sum1=0;
 		for(i=0;i<length;i++){
-			sum=sum+a[i]*a[i]*a[i]*a[i];
+			sum=1;
+			for(j=0;j<length;j++){
+				sum*=a[i];
+			}
+			sum1=sum1+sum;
 		}
-		System.out.println(sum);
+		System.out.println(sum1);
 	}
 
 }
