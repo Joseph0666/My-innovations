@@ -51,7 +51,7 @@ public class Guvipro1 {
 	}
 		for(Object o:set3){
 			if(large==((String) o).length()){
-			System.out.println(o);	
+			System.out.println(o+" with length of "+large);	
 			}
 		}
 	}
